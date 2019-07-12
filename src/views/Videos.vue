@@ -7,7 +7,7 @@
     </div>
     <div class="videos">
       <div class="videos__thumbs">
-        <ul>
+        <ul class="box">
           <li>
             <router-link :to="{ name: 'videos', params: { slug: 'video-1' } }">
               <img src="/img/cpl-1.jpg" alt="" loading="lazy">
@@ -77,6 +77,15 @@ export default {
 </script>
 
 <style lang="scss">
+
+  .box {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
   .disabled {
     color: #dedede;
     user-select: none;
@@ -114,6 +123,12 @@ export default {
             .vDate {
               font-weight: bold;
               display: block;
+            }
+
+            .vTitle {
+              @media only screen and (max-width: 600px) {
+                display: none;
+              }
             }
           }
         }
