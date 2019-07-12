@@ -123,6 +123,10 @@ export default {
             .vDate {
               font-weight: bold;
               display: block;
+
+              @media only screen and (max-width: 600px) {
+                font-size: 0.8em;
+              }
             }
 
             .vTitle {
