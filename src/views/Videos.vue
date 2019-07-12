@@ -122,10 +122,11 @@ export default {
 
             .vDate {
               font-weight: bold;
-              display: block;
-
+              display: table;
+              text-align: center;
               @media only screen and (max-width: 600px) {
                 font-size: 0.8em;
+                display: table;
               }
             }
 
