@@ -10,7 +10,7 @@
             <label for="email">Email</label>
             <md-input type="email" name="email" id="email" v-model="form.email" placeholder="Digite aqui o seu e-mail" required/>
             <span class="md-error" v-if="errorEmail">E-mail é obrigatório!</span>
-          </md-field> 
+          </md-field>
         </form>
       </md-content>
 
@@ -52,7 +52,7 @@
         this.$eventHub.$emit('close-dialog', false);
       },
       handlerRedirect: function() {
-        this.$router.push('/vídeos');
+        this.$router.push('/videos');
       }
     },
     watch: {
